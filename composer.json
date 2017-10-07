@@ -3,7 +3,7 @@
     "type": "userfrosting-sprinkle",
     "description": "Form generator Example for UserFrosting V4",
     "keywords": ["Form", "generator", "userfrosting"],
-    "homepage": "https://github.com/lcharette/UF_FormGeneratorExampleJY",
+    "homepage": "https://github.com/jy2008/FormGeneratorExampleJY",
     "license" : "MIT",
     "authors" : [
         {

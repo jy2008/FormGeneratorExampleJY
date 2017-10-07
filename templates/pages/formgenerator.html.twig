@@ -1,0 +1,41 @@
+{% extends "pages/abstract/dashboard.html.twig" %}
+{% block stylesheets_page %}
+    <!-- Page-group-specific CSS asset bundle -->
+    {{ assets.css('css/FormGeneratorJY') | raw }}
+{% endblock %}
+{% block page_title %}Projects list{% endblock %}
+{% block page_description %}{% endblock %}
+
+{% block body_matter %}
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="fgclient-table-box" class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title pull-left"><i class="fa fa-fw fa-user"></i> Clients</h3>
+                        {% include "tables/table-tool-menu.html.twig" %}
+                    </div>
+                    <div class="box-body">
+                        {% include "tables/fgclients.html.twig" with {
+                                "table" : {
+                                    "id" : "table-members"
+                                }
+                            }
+                        %}                     
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        <button class="btn btn-success js-displayForm" data-toggle="modal" data-formUrl="/formgenerator/new"><i class="fa fa-plus-square"></i> Create Combat</button>
+                        <button class="btn btn-success js-displayForm" data-toggle="modal" data-formUrl="/formgenerator/magic/new"><i class="fa fa-plus-square"></i> Create Magic</button>
+                    </div>
+                </div><!-- /.box -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+{% endblock %}
+
+{% block scripts_page %}
+    <script>
+    {% include "pages/partials/page.js.twig" %}
+    </script>
+    
+    {{ assets.js('js/FormGeneratorJY') | raw }}
+{% endblock %}

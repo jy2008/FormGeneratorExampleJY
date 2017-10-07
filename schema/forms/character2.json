@@ -1,0 +1,30 @@
+{
+    "type2" : {
+        "form" : {
+            "type" : "text",
+            "default" : "MAGIC"
+        }
+    },
+    "cs2" : {
+        "form" : {
+            "type" : "number",
+            "label" : "Project Owner",
+            "icon" : "fa-user",
+            "placeholder" : "Project Owner",
+            "data-cell" : "B2"
+        }
+    },
+   
+    "cs21" : {
+
+        "form" : {
+            "type" : "number",
+            "icon" : "fa-percent",
+            "label" : "Project completion",
+            "data-cell" : "B1",
+            "data-formula" : "B2*3"
+        }
+    }
+    
+}
+

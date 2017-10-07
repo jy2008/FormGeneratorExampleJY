@@ -1,0 +1,30 @@
+{
+    "type1" : {
+        "form" : {
+            "type" : "text",
+            "default" : "COMBAT"
+        }
+    },
+    "cs1" : {
+        "form" : {
+            "type" : "number",
+            "label" : "Project Owner",
+            "icon" : "fa-user",
+            "placeholder" : "Project Owner",
+            "data-cell" : "A2"
+        }
+    },
+   
+    "cs11" : {
+
+        "form" : {
+            "type" : "number",
+            "icon" : "fa-percent",
+            "label" : "Project completion",
+            "data-cell" : "A1",
+            "data-formula" : "D4*4"
+        }
+    }
+    
+}
+

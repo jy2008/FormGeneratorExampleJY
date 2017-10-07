@@ -1,0 +1,59 @@
+{% extends "FormGeneratorJY/modal.html.twig" %}
+
+
+
+{% block scripts_page %}
+{{ parent() }}
+
+<script>
+    $("#myform :input").tooltip({
+            position: "center right",
+            offset: [-2, 10],
+            effect: "fade",
+            opacity: 0.7
+    });
+    $(document).ready(function () {
+        $("#type").change(function(){
+   			$("#active").toggle();
+            $("#description").toggle();
+
+        });
+        $("#active").change(function(){
+   			$("#status").toggle();
+		
+
+		});
+    });
+
+    $(document).ready(function () {
+            $('#ck').click(function(){
+                $('#owner').show();
+                $('#name').show();
+                $('#type').show();
+                $('#description').show();
+                $('#status').show();
+                $('#completion').show();
+                $('#active').show();
+
+            });
+
+            $('#na').click(function(){
+                $('#name').hide();
+                $('#owner').hide();
+                $('#type').hide();
+                $('#description').show();
+                $('#status').show();
+                $('#completion').hide();
+                $('#active').hide();
+
+            });
+    });
+
+
+
+    $(document).ready(function() {
+        $('#{{box_id}}').calx();
+    });
+</script>
+
+{% endblock %}

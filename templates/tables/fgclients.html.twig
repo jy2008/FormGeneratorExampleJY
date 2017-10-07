@@ -1,0 +1,73 @@
+{% extends "tables/table-paginated.html.twig" %}
+
+{% block table %}
+    <table id="fgclient-table" class="tablesorter table table-bordered table-hover table-striped" data-sortlist="{{table.sortlist}}">
+        <thead>
+            <tr>
+                <th class="sorter-metatext" data-column-name="name" data-column-template="#fgclients-table-column-name-id" data-priority="1">Name <i class="fa fa-sort"></i></th>
+                <th class="sorter-metanum" data-column-name="completion" data-column-template="#fgclients-table-column-status" data-priority="1">Completion <i class="fa fa-sort"></i></th>
+                <th data-column-template="#fgclients-table-column-actions" data-sorter="false" data-filter="false" data-priority="1">{{translate("ACTIONS")}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block table_cell_templates %}
+
+    {% verbatim %}
+    <script id="fgclients-table-column-name-id" type="text/x-handlebars-template">
+        <td data-text="{{row.name}}">
+            <strong>
+                <a href="{{site.uri.public}}/formgenerator/{{row.id}}">{{row.name}}</a>
+            </strong>
+            <div class=" js-copy-container">
+                <p>Project ID: <span class="js-copy-target s-copy-trigger">usor roll {{row.id}}+{{row.name}}</span>
+                    <button class="btn btn-default js-copy-trigger" type="button"><i class="fa fa-clipboard"></i></button>
+                </p>
+            </div>
+            {{row.name}}
+        </td>
+    </script>
+
+    <script id="fgclients-table-column-status" type="text/x-handlebars-template">
+        <td data-text="{{row.completion}}">
+            <div class=" js-copy-container">
+                <p>Project ID: <span class="js-copy-target s-copy-trigger">{{row.id}}</span>
+                    <button class="btn btn-default js-copy-trigger" type="button"><i class="fa fa-clipboard"></i></button>
+                </p>
+                <p>Project completion: <span class="js-copy-target s-copy-trigger">{{row.completion}}</span>
+                    <button class="btn btn-default js-copy-trigger" type="button"><i class="fa fa-clipboard"></i></button>
+                </p>
+            </div>
+            {{row.completion}}
+        </td>
+    </script>
+
+    <script id="fgclients-table-column-actions" type="text/x-handlebars-template">
+        <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    {% endverbatim %}{{translate("ACTIONS")}}{% verbatim %}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        
+                    <li>
+                        <a href="#" data-id="{{row.id}}" class="js-displayForm">
+                        <i class="fa fa-edit"></i> {% endverbatim %}{{translate("EDIT")}}{% verbatim %}
+                        </a>
+                    </li>                  
+                    <li>
+                        <a href="#" data-id="{{row.id}}" class="js-displayConfirm">
+                        <i class="fa fa-trash-o"></i> {% endverbatim %}{{translate("DELETE")}}{% verbatim %}
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+        </td>
+    </script>
+    {% endverbatim %}
+
+{% endblock %}

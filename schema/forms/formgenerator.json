@@ -1,0 +1,108 @@
+{
+    "name" : {
+        "validators" : {
+            "length" : {
+                "max" : 100,
+                "message" : "VALIDATE.MAX_LENGTH"
+            },
+            "required" : {
+                "label" : "Project name",
+                "message" : "VALIDATE.REQUIRED"
+            }
+        },
+        "form" : {
+            "type" : "text",
+            "label" : "Project name",
+            "placeholder" : "Project name",
+            "title" : "Must be at least 8 characters."
+            
+        }
+    },   
+    "type" : {
+        "form" : {
+            "type" : "checkbox"
+            
+        }
+    },
+    "owner" : {
+        "validators" : {
+            "member_of" : {
+                "values" : [
+                    "0", "1"
+                ]
+            }
+        },
+        "form" : {
+            "type" : "select",
+            "options" : {
+                "0" : "zero",
+                "1" : "one"
+            },
+            "data-cell" : "D5",
+            "title" : "Must be at least 8 characters."
+        }
+    },
+    "description" : {
+        "form" : {
+            "type" : "text",
+            "label" : "Project description",
+            "placeholder" : "Project description",
+            "data-cell" : "D1"
+        }
+    },
+    "status" : {
+        "validators" : {
+            "member_of" : {
+                "values" : [
+                    "5", "6"
+                ]
+            }
+        },
+        "form" : {
+            "type" : "select",
+            "options" : {
+                
+                "5" : "Available",
+                "6" : "Disabled"
+            },
+             "data-cell" : "D4",
+             "readonly" : "readonly"
+
+        }
+    },
+    "active" : {
+        "form" : {
+            "type" : "checkbox",
+            "data-cell" : "D2",
+            "value": "5",
+            "data-unchecked": "10"            
+        }
+    },
+    "completion" : {
+        "validators" : {
+            "range" : {
+                "min" : 0,
+                "max" : 100,
+                "message" : "VALIDATE.RANGE"
+            },
+            "required" : {
+                "label" : "Project completion",
+                "message" : "VALIDATE.REQUIRED"
+            }
+        },
+        "form" : {
+            "type" : "number",
+            "label" : "Project completion",
+            "title" : "Must be at least 8 characters.",
+            "data-formula" : "if(D1='usor',D2,D4)"
+        }
+    },
+    "hiddenString" : {
+        "form" : {
+            "type" : "hidden",
+            "default" : "Something's hidden"
+        }
+    }
+    
+}
+

@@ -1,0 +1,101 @@
+{% extends "pages/abstract/dashboard.html.twig" %}
+
+{% block stylesheets_page %}
+    <!-- Page-group-specific CSS asset bundle -->
+    {{ assets.css('css/FormGeneratorJY') | raw }}
+{% endblock %}
+
+{% block page_title %}Form{% endblock %}
+{% block page_description %}{% endblock %}
+
+{% block body_matter %}
+
+    <div id="calx_form" class="row">
+        <div class="col-lg-2">
+            <ul class="nav nav-pills nav-stacked">
+
+                <li role="presentation" id="na" {% if loop.first %} class="active"{% endif %}><a href="#">name</a></li>
+                <li role="presentation" id="ck" {% if loop.first %} class="active"{% endif %}><a href="#">owner</a></li>
+
+            </ul>
+        </div>
+        <div class="col-md-10">
+
+          <form id="myform" method="post" action="{{form_action}}" class="form-inline">
+                        {% include "forms/csrf.html.twig" %}
+                        <div class="form-alerts"></div>
+                        {% include 'FormGeneratorJY/FormGenerator.html.twig' %}
+          </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts_page %}
+        <script>
+        $("#myform :input").tooltip({
+            position: "center right",
+            offset: [-2, 10],
+            effect: "fade",
+            opacity: 0.7
+        });
+        $(document).ready(function(){
+            $('#field_status').on('change', function () {
+                var valname = $('#field_status').select2('data');
+
+                if (valname == "0") {
+                    $("#field_owner").prop("disabled", true);
+                }
+                else{
+                    $("#field_owner").prop("disabled", false);
+                }
+                console.log(valname);
+            });
+        });
+
+        $(document).ready(function(){
+
+            $("#field_active").on("ifChecked", function() {
+                $('#owner').prop('disabled', true);
+            });
+        });
+        $(document).ready(function(){
+            $("#field_active").on("ifUnchecked", function() {
+                $('#owner').show();
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#ck').click(function(){
+                $('#owner').show();
+                $('#name').hide();
+                $('#type').hide();
+                $('#description').hide();
+                $('#status').hide();
+                $('#completion').hide();
+                $('#active').hide();
+
+            });
+
+            $('#na').click(function(){
+                $('#name').show();
+                $('#owner').hide();
+                $('#type').hide();
+                $('#description').hide();
+                $('#status').hide();
+                $('#completion').hide();
+                $('#active').hide();
+
+            });
+         });
+
+
+
+        $(document).ready(function () {
+            $("#calx_form").calx();
+        });
+
+        </script>
+
+        {{ assets.js('js/FormGeneratorJY') | raw }}
+{% endblock %}

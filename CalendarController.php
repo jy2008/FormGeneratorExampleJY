@@ -1987,6 +1987,1940 @@ class CalendarController {
 		['user_id', $currentUser->id],
 		['c0pm_player', '=', '1']
 		])->value('c0pm_playeryes');
+		$calendar9 = Calendar9::where('user_id', $currentUser->id)->first();
+		$gm1Num9 = Calendar9::all()->sum('c1am_gm');
+		$player1Num9 = Calendar9::all()->sum('c1am_player');
+		$gm1Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num9 = Calendar9::all()->sum('c2am_gm');
+		$player2Num9 = Calendar9::all()->sum('c2am_player');
+		$gm2Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num9 = Calendar9::all()->sum('c3am_gm');
+		$player3Num9 = Calendar9::all()->sum('c3am_player');
+		$gm3Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num9 = Calendar9::all()->sum('c4am_gm');
+		$player4Num9 = Calendar9::all()->sum('c4am_player');
+		$gm4Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num9 = Calendar9::all()->sum('c5am_gm');
+		$player5Num9 = Calendar9::all()->sum('c5am_player');
+		$gm5Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num9 = Calendar9::all()->sum('c6am_gm');
+		$player6Num9 = Calendar9::all()->sum('c6am_player');
+		$gm6Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num9 = Calendar9::all()->sum('c7am_gm');
+		$player7Num9 = Calendar9::all()->sum('c7am_player');
+		$gm7Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num9 = Calendar9::all()->sum('c8am_gm');
+		$player8Num9 = Calendar9::all()->sum('c8am_player');
+		$gm8Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num9 = Calendar9::all()->sum('c9am_gm');
+		$player9Num9 = Calendar9::all()->sum('c9am_player');
+		$gm9Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num9 = Calendar9::all()->sum('c10am_gm');
+		$player10Num9 = Calendar9::all()->sum('c10am_player');
+		$gm10Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num9 = Calendar9::all()->sum('c11am_gm');
+		$player11Num9 = Calendar9::all()->sum('c11am_player');
+		$gm11Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num9 = Calendar9::all()->sum('c12pm_gm');
+		$player12Num9 = Calendar9::all()->sum('c12pm_player');
+		$gm12Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num9 = Calendar9::all()->sum('c1pm_gm');
+		$player13Num9 = Calendar9::all()->sum('c1pm_player');
+		$gm13Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num9 = Calendar9::all()->sum('c2pm_gm');
+		$player14Num9 = Calendar9::all()->sum('c2pm_player');
+		$gm14Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num9 = Calendar9::all()->sum('c3pm_gm');
+		$player15Num9 = Calendar9::all()->sum('c3pm_player');
+		$gm15Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num9 = Calendar9::all()->sum('c4pm_gm');
+		$player16Num9 = Calendar9::all()->sum('c4pm_player');
+		$gm16Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num9 = Calendar9::all()->sum('c5pm_gm');
+		$player17Num9 = Calendar9::all()->sum('c5pm_player');
+		$gm17Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num9 = Calendar9::all()->sum('c6pm_gm');
+		$player18Num9 = Calendar9::all()->sum('c6pm_player');
+		$gm18Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num9 = Calendar9::all()->sum('c7pm_gm');
+		$player19Num9 = Calendar9::all()->sum('c7pm_player');
+		$gm19Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num9 = Calendar9::all()->sum('c8pm_gm');
+		$player20Num9 = Calendar9::all()->sum('c8pm_player');
+		$gm20Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num9 = Calendar9::all()->sum('c9pm_gm');
+		$player21Num9 = Calendar9::all()->sum('c9pm_player');
+		$gm21Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num9 = Calendar9::all()->sum('c10pm_gm');
+		$player22Num9 = Calendar9::all()->sum('c10pm_player');
+		$gm22Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num9 = Calendar9::all()->sum('c11pm_gm');
+		$player23Num9 = Calendar9::all()->sum('c11pm_player');
+		$gm23Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num9 = Calendar9::all()->sum('c0pm_gm');
+		$player24Num9 = Calendar9::all()->sum('c0pm_player');
+		$gm24Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self9 = Calendar9::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar10 = Calendar10::where('user_id', $currentUser->id)->first();
+		$gm1Num10 = Calendar10::all()->sum('c1am_gm');
+		$player1Num10 = Calendar10::all()->sum('c1am_player');
+		$gm1Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num10 = Calendar10::all()->sum('c2am_gm');
+		$player2Num10 = Calendar10::all()->sum('c2am_player');
+		$gm2Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num10 = Calendar10::all()->sum('c3am_gm');
+		$player3Num10 = Calendar10::all()->sum('c3am_player');
+		$gm3Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num10 = Calendar10::all()->sum('c4am_gm');
+		$player4Num10 = Calendar10::all()->sum('c4am_player');
+		$gm4Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num10 = Calendar10::all()->sum('c5am_gm');
+		$player5Num10 = Calendar10::all()->sum('c5am_player');
+		$gm5Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num10 = Calendar10::all()->sum('c6am_gm');
+		$player6Num10 = Calendar10::all()->sum('c6am_player');
+		$gm6Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num10 = Calendar10::all()->sum('c7am_gm');
+		$player7Num10 = Calendar10::all()->sum('c7am_player');
+		$gm7Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num10 = Calendar10::all()->sum('c8am_gm');
+		$player8Num10 = Calendar10::all()->sum('c8am_player');
+		$gm8Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num10 = Calendar10::all()->sum('c9am_gm');
+		$player9Num10 = Calendar10::all()->sum('c9am_player');
+		$gm9Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num10 = Calendar10::all()->sum('c10am_gm');
+		$player10Num10 = Calendar10::all()->sum('c10am_player');
+		$gm10Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num10 = Calendar10::all()->sum('c11am_gm');
+		$player11Num10 = Calendar10::all()->sum('c11am_player');
+		$gm11Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num10 = Calendar10::all()->sum('c12pm_gm');
+		$player12Num10 = Calendar10::all()->sum('c12pm_player');
+		$gm12Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num10 = Calendar10::all()->sum('c1pm_gm');
+		$player13Num10 = Calendar10::all()->sum('c1pm_player');
+		$gm13Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num10 = Calendar10::all()->sum('c2pm_gm');
+		$player14Num10 = Calendar10::all()->sum('c2pm_player');
+		$gm14Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num10 = Calendar10::all()->sum('c3pm_gm');
+		$player15Num10 = Calendar10::all()->sum('c3pm_player');
+		$gm15Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num10 = Calendar10::all()->sum('c4pm_gm');
+		$player16Num10 = Calendar10::all()->sum('c4pm_player');
+		$gm16Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num10 = Calendar10::all()->sum('c5pm_gm');
+		$player17Num10 = Calendar10::all()->sum('c5pm_player');
+		$gm17Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num10 = Calendar10::all()->sum('c6pm_gm');
+		$player18Num10 = Calendar10::all()->sum('c6pm_player');
+		$gm18Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num10 = Calendar10::all()->sum('c7pm_gm');
+		$player19Num10 = Calendar10::all()->sum('c7pm_player');
+		$gm19Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num10 = Calendar10::all()->sum('c8pm_gm');
+		$player20Num10 = Calendar10::all()->sum('c8pm_player');
+		$gm20Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num10 = Calendar10::all()->sum('c9pm_gm');
+		$player21Num10 = Calendar10::all()->sum('c9pm_player');
+		$gm21Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num10 = Calendar10::all()->sum('c10pm_gm');
+		$player22Num10 = Calendar10::all()->sum('c10pm_player');
+		$gm22Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num10 = Calendar10::all()->sum('c11pm_gm');
+		$player23Num10 = Calendar10::all()->sum('c11pm_player');
+		$gm23Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num10 = Calendar10::all()->sum('c0pm_gm');
+		$player24Num10 = Calendar10::all()->sum('c0pm_player');
+		$gm24Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self10 = Calendar10::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar11 = Calendar11::where('user_id', $currentUser->id)->first();
+		$gm1Num11 = Calendar11::all()->sum('c1am_gm');
+		$player1Num11 = Calendar11::all()->sum('c1am_player');
+		$gm1Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num11 = Calendar11::all()->sum('c2am_gm');
+		$player2Num11 = Calendar11::all()->sum('c2am_player');
+		$gm2Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num11 = Calendar11::all()->sum('c3am_gm');
+		$player3Num11 = Calendar11::all()->sum('c3am_player');
+		$gm3Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num11 = Calendar11::all()->sum('c4am_gm');
+		$player4Num11 = Calendar11::all()->sum('c4am_player');
+		$gm4Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num11 = Calendar11::all()->sum('c5am_gm');
+		$player5Num11 = Calendar11::all()->sum('c5am_player');
+		$gm5Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num11 = Calendar11::all()->sum('c6am_gm');
+		$player6Num11 = Calendar11::all()->sum('c6am_player');
+		$gm6Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num11 = Calendar11::all()->sum('c7am_gm');
+		$player7Num11 = Calendar11::all()->sum('c7am_player');
+		$gm7Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num11 = Calendar11::all()->sum('c8am_gm');
+		$player8Num11 = Calendar11::all()->sum('c8am_player');
+		$gm8Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num11 = Calendar11::all()->sum('c9am_gm');
+		$player9Num11 = Calendar11::all()->sum('c9am_player');
+		$gm9Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num11 = Calendar11::all()->sum('c10am_gm');
+		$player10Num11 = Calendar11::all()->sum('c10am_player');
+		$gm10Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num11 = Calendar11::all()->sum('c11am_gm');
+		$player11Num11 = Calendar11::all()->sum('c11am_player');
+		$gm11Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num11 = Calendar11::all()->sum('c12pm_gm');
+		$player12Num11 = Calendar11::all()->sum('c12pm_player');
+		$gm12Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num11 = Calendar11::all()->sum('c1pm_gm');
+		$player13Num11 = Calendar11::all()->sum('c1pm_player');
+		$gm13Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num11 = Calendar11::all()->sum('c2pm_gm');
+		$player14Num11 = Calendar11::all()->sum('c2pm_player');
+		$gm14Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num11 = Calendar11::all()->sum('c3pm_gm');
+		$player15Num11 = Calendar11::all()->sum('c3pm_player');
+		$gm15Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num11 = Calendar11::all()->sum('c4pm_gm');
+		$player16Num11 = Calendar11::all()->sum('c4pm_player');
+		$gm16Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num11 = Calendar11::all()->sum('c5pm_gm');
+		$player17Num11 = Calendar11::all()->sum('c5pm_player');
+		$gm17Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num11 = Calendar11::all()->sum('c6pm_gm');
+		$player18Num11 = Calendar11::all()->sum('c6pm_player');
+		$gm18Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num11 = Calendar11::all()->sum('c7pm_gm');
+		$player19Num11 = Calendar11::all()->sum('c7pm_player');
+		$gm19Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num11 = Calendar11::all()->sum('c8pm_gm');
+		$player20Num11 = Calendar11::all()->sum('c8pm_player');
+		$gm20Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num11 = Calendar11::all()->sum('c9pm_gm');
+		$player21Num11 = Calendar11::all()->sum('c9pm_player');
+		$gm21Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num11 = Calendar11::all()->sum('c10pm_gm');
+		$player22Num11 = Calendar11::all()->sum('c10pm_player');
+		$gm22Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num11 = Calendar11::all()->sum('c11pm_gm');
+		$player23Num11 = Calendar11::all()->sum('c11pm_player');
+		$gm23Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num11 = Calendar11::all()->sum('c0pm_gm');
+		$player24Num11 = Calendar11::all()->sum('c0pm_player');
+		$gm24Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self11 = Calendar11::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar12 = Calendar12::where('user_id', $currentUser->id)->first();
+		$gm1Num12 = Calendar12::all()->sum('c1am_gm');
+		$player1Num12 = Calendar12::all()->sum('c1am_player');
+		$gm1Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num12 = Calendar12::all()->sum('c2am_gm');
+		$player2Num12 = Calendar12::all()->sum('c2am_player');
+		$gm2Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num12 = Calendar12::all()->sum('c3am_gm');
+		$player3Num12 = Calendar12::all()->sum('c3am_player');
+		$gm3Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num12 = Calendar12::all()->sum('c4am_gm');
+		$player4Num12 = Calendar12::all()->sum('c4am_player');
+		$gm4Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num12 = Calendar12::all()->sum('c5am_gm');
+		$player5Num12 = Calendar12::all()->sum('c5am_player');
+		$gm5Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num12 = Calendar12::all()->sum('c6am_gm');
+		$player6Num12 = Calendar12::all()->sum('c6am_player');
+		$gm6Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num12 = Calendar12::all()->sum('c7am_gm');
+		$player7Num12 = Calendar12::all()->sum('c7am_player');
+		$gm7Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num12 = Calendar12::all()->sum('c8am_gm');
+		$player8Num12 = Calendar12::all()->sum('c8am_player');
+		$gm8Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num12 = Calendar12::all()->sum('c9am_gm');
+		$player9Num12 = Calendar12::all()->sum('c9am_player');
+		$gm9Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num12 = Calendar12::all()->sum('c10am_gm');
+		$player10Num12 = Calendar12::all()->sum('c10am_player');
+		$gm10Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num12 = Calendar12::all()->sum('c11am_gm');
+		$player11Num12 = Calendar12::all()->sum('c11am_player');
+		$gm11Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num12 = Calendar12::all()->sum('c12pm_gm');
+		$player12Num12 = Calendar12::all()->sum('c12pm_player');
+		$gm12Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num12 = Calendar12::all()->sum('c1pm_gm');
+		$player13Num12 = Calendar12::all()->sum('c1pm_player');
+		$gm13Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num12 = Calendar12::all()->sum('c2pm_gm');
+		$player14Num12 = Calendar12::all()->sum('c2pm_player');
+		$gm14Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num12 = Calendar12::all()->sum('c3pm_gm');
+		$player15Num12 = Calendar12::all()->sum('c3pm_player');
+		$gm15Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num12 = Calendar12::all()->sum('c4pm_gm');
+		$player16Num12 = Calendar12::all()->sum('c4pm_player');
+		$gm16Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num12 = Calendar12::all()->sum('c5pm_gm');
+		$player17Num12 = Calendar12::all()->sum('c5pm_player');
+		$gm17Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num12 = Calendar12::all()->sum('c6pm_gm');
+		$player18Num12 = Calendar12::all()->sum('c6pm_player');
+		$gm18Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num12 = Calendar12::all()->sum('c7pm_gm');
+		$player19Num12 = Calendar12::all()->sum('c7pm_player');
+		$gm19Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num12 = Calendar12::all()->sum('c8pm_gm');
+		$player20Num12 = Calendar12::all()->sum('c8pm_player');
+		$gm20Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num12 = Calendar12::all()->sum('c9pm_gm');
+		$player21Num12 = Calendar12::all()->sum('c9pm_player');
+		$gm21Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num12 = Calendar12::all()->sum('c10pm_gm');
+		$player22Num12 = Calendar12::all()->sum('c10pm_player');
+		$gm22Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num12 = Calendar12::all()->sum('c11pm_gm');
+		$player23Num12 = Calendar12::all()->sum('c11pm_player');
+		$gm23Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num12 = Calendar12::all()->sum('c0pm_gm');
+		$player24Num12 = Calendar12::all()->sum('c0pm_player');
+		$gm24Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self12 = Calendar12::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+		$calendar13 = Calendar13::where('user_id', $currentUser->id)->first();
+		$gm1Num13 = Calendar13::all()->sum('c1am_gm');
+		$player1Num13 = Calendar13::all()->sum('c1am_player');
+		$gm1Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num13 = Calendar13::all()->sum('c2am_gm');
+		$player2Num13 = Calendar13::all()->sum('c2am_player');
+		$gm2Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num13 = Calendar13::all()->sum('c3am_gm');
+		$player3Num13 = Calendar13::all()->sum('c3am_player');
+		$gm3Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num13 = Calendar13::all()->sum('c4am_gm');
+		$player4Num13 = Calendar13::all()->sum('c4am_player');
+		$gm4Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num13 = Calendar13::all()->sum('c5am_gm');
+		$player5Num13 = Calendar13::all()->sum('c5am_player');
+		$gm5Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num13 = Calendar13::all()->sum('c6am_gm');
+		$player6Num13 = Calendar13::all()->sum('c6am_player');
+		$gm6Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num13 = Calendar13::all()->sum('c7am_gm');
+		$player7Num13 = Calendar13::all()->sum('c7am_player');
+		$gm7Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num13 = Calendar13::all()->sum('c8am_gm');
+		$player8Num13 = Calendar13::all()->sum('c8am_player');
+		$gm8Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num13 = Calendar13::all()->sum('c9am_gm');
+		$player9Num13 = Calendar13::all()->sum('c9am_player');
+		$gm9Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num13 = Calendar13::all()->sum('c10am_gm');
+		$player10Num13 = Calendar13::all()->sum('c10am_player');
+		$gm10Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num13 = Calendar13::all()->sum('c11am_gm');
+		$player11Num13 = Calendar13::all()->sum('c11am_player');
+		$gm11Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num13 = Calendar13::all()->sum('c12pm_gm');
+		$player12Num13 = Calendar13::all()->sum('c12pm_player');
+		$gm12Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num13 = Calendar13::all()->sum('c1pm_gm');
+		$player13Num13 = Calendar13::all()->sum('c1pm_player');
+		$gm13Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num13 = Calendar13::all()->sum('c2pm_gm');
+		$player14Num13 = Calendar13::all()->sum('c2pm_player');
+		$gm14Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num13 = Calendar13::all()->sum('c3pm_gm');
+		$player15Num13 = Calendar13::all()->sum('c3pm_player');
+		$gm15Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num13 = Calendar13::all()->sum('c4pm_gm');
+		$player16Num13 = Calendar13::all()->sum('c4pm_player');
+		$gm16Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num13 = Calendar13::all()->sum('c5pm_gm');
+		$player17Num13 = Calendar13::all()->sum('c5pm_player');
+		$gm17Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num13 = Calendar13::all()->sum('c6pm_gm');
+		$player18Num13 = Calendar13::all()->sum('c6pm_player');
+		$gm18Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num13 = Calendar13::all()->sum('c7pm_gm');
+		$player19Num13 = Calendar13::all()->sum('c7pm_player');
+		$gm19Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num13 = Calendar13::all()->sum('c8pm_gm');
+		$player20Num13 = Calendar13::all()->sum('c8pm_player');
+		$gm20Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num13 = Calendar13::all()->sum('c9pm_gm');
+		$player21Num13 = Calendar13::all()->sum('c9pm_player');
+		$gm21Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num13 = Calendar13::all()->sum('c10pm_gm');
+		$player22Num13 = Calendar13::all()->sum('c10pm_player');
+		$gm22Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num13 = Calendar13::all()->sum('c11pm_gm');
+		$player23Num13 = Calendar13::all()->sum('c11pm_player');
+		$gm23Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num13 = Calendar13::all()->sum('c0pm_gm');
+		$player24Num13 = Calendar13::all()->sum('c0pm_player');
+		$gm24Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self13 = Calendar13::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar14 = Calendar14::where('user_id', $currentUser->id)->first();
+		$gm1Num14 = Calendar14::all()->sum('c1am_gm');
+		$player1Num14 = Calendar14::all()->sum('c1am_player');
+		$gm1Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num14 = Calendar14::all()->sum('c2am_gm');
+		$player2Num14 = Calendar14::all()->sum('c2am_player');
+		$gm2Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num14 = Calendar14::all()->sum('c3am_gm');
+		$player3Num14 = Calendar14::all()->sum('c3am_player');
+		$gm3Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num14 = Calendar14::all()->sum('c4am_gm');
+		$player4Num14 = Calendar14::all()->sum('c4am_player');
+		$gm4Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num14 = Calendar14::all()->sum('c5am_gm');
+		$player5Num14 = Calendar14::all()->sum('c5am_player');
+		$gm5Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num14 = Calendar14::all()->sum('c6am_gm');
+		$player6Num14 = Calendar14::all()->sum('c6am_player');
+		$gm6Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num14 = Calendar14::all()->sum('c7am_gm');
+		$player7Num14 = Calendar14::all()->sum('c7am_player');
+		$gm7Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num14 = Calendar14::all()->sum('c8am_gm');
+		$player8Num14 = Calendar14::all()->sum('c8am_player');
+		$gm8Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num14 = Calendar14::all()->sum('c9am_gm');
+		$player9Num14 = Calendar14::all()->sum('c9am_player');
+		$gm9Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num14 = Calendar14::all()->sum('c10am_gm');
+		$player10Num14 = Calendar14::all()->sum('c10am_player');
+		$gm10Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num14 = Calendar14::all()->sum('c11am_gm');
+		$player11Num14 = Calendar14::all()->sum('c11am_player');
+		$gm11Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num14 = Calendar14::all()->sum('c12pm_gm');
+		$player12Num14 = Calendar14::all()->sum('c12pm_player');
+		$gm12Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num14 = Calendar14::all()->sum('c1pm_gm');
+		$player13Num14 = Calendar14::all()->sum('c1pm_player');
+		$gm13Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num14 = Calendar14::all()->sum('c2pm_gm');
+		$player14Num14 = Calendar14::all()->sum('c2pm_player');
+		$gm14Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num14 = Calendar14::all()->sum('c3pm_gm');
+		$player15Num14 = Calendar14::all()->sum('c3pm_player');
+		$gm15Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num14 = Calendar14::all()->sum('c4pm_gm');
+		$player16Num14 = Calendar14::all()->sum('c4pm_player');
+		$gm16Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num14 = Calendar14::all()->sum('c5pm_gm');
+		$player17Num14 = Calendar14::all()->sum('c5pm_player');
+		$gm17Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num14 = Calendar14::all()->sum('c6pm_gm');
+		$player18Num14 = Calendar14::all()->sum('c6pm_player');
+		$gm18Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num14 = Calendar14::all()->sum('c7pm_gm');
+		$player19Num14 = Calendar14::all()->sum('c7pm_player');
+		$gm19Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num14 = Calendar14::all()->sum('c8pm_gm');
+		$player20Num14 = Calendar14::all()->sum('c8pm_player');
+		$gm20Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num14 = Calendar14::all()->sum('c9pm_gm');
+		$player21Num14 = Calendar14::all()->sum('c9pm_player');
+		$gm21Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num14 = Calendar14::all()->sum('c10pm_gm');
+		$player22Num14 = Calendar14::all()->sum('c10pm_player');
+		$gm22Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num14 = Calendar14::all()->sum('c11pm_gm');
+		$player23Num14 = Calendar14::all()->sum('c11pm_player');
+		$gm23Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num14 = Calendar14::all()->sum('c0pm_gm');
+		$player24Num14 = Calendar14::all()->sum('c0pm_player');
+		$gm24Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self14 = Calendar14::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar15 = Calendar15::where('user_id', $currentUser->id)->first();
+		$gm1Num15 = Calendar15::all()->sum('c1am_gm');
+		$player1Num15 = Calendar15::all()->sum('c1am_player');
+		$gm1Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num15 = Calendar15::all()->sum('c2am_gm');
+		$player2Num15 = Calendar15::all()->sum('c2am_player');
+		$gm2Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num15 = Calendar15::all()->sum('c3am_gm');
+		$player3Num15 = Calendar15::all()->sum('c3am_player');
+		$gm3Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num15 = Calendar15::all()->sum('c4am_gm');
+		$player4Num15 = Calendar15::all()->sum('c4am_player');
+		$gm4Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num15 = Calendar15::all()->sum('c5am_gm');
+		$player5Num15 = Calendar15::all()->sum('c5am_player');
+		$gm5Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num15 = Calendar15::all()->sum('c6am_gm');
+		$player6Num15 = Calendar15::all()->sum('c6am_player');
+		$gm6Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num15 = Calendar15::all()->sum('c7am_gm');
+		$player7Num15 = Calendar15::all()->sum('c7am_player');
+		$gm7Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num15 = Calendar15::all()->sum('c8am_gm');
+		$player8Num15 = Calendar15::all()->sum('c8am_player');
+		$gm8Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num15 = Calendar15::all()->sum('c9am_gm');
+		$player9Num15 = Calendar15::all()->sum('c9am_player');
+		$gm9Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num15 = Calendar15::all()->sum('c10am_gm');
+		$player10Num15 = Calendar15::all()->sum('c10am_player');
+		$gm10Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num15 = Calendar15::all()->sum('c11am_gm');
+		$player11Num15 = Calendar15::all()->sum('c11am_player');
+		$gm11Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num15 = Calendar15::all()->sum('c12pm_gm');
+		$player12Num15 = Calendar15::all()->sum('c12pm_player');
+		$gm12Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num15 = Calendar15::all()->sum('c1pm_gm');
+		$player13Num15 = Calendar15::all()->sum('c1pm_player');
+		$gm13Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num15 = Calendar15::all()->sum('c2pm_gm');
+		$player14Num15 = Calendar15::all()->sum('c2pm_player');
+		$gm14Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num15 = Calendar15::all()->sum('c3pm_gm');
+		$player15Num15 = Calendar15::all()->sum('c3pm_player');
+		$gm15Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num15 = Calendar15::all()->sum('c4pm_gm');
+		$player16Num15 = Calendar15::all()->sum('c4pm_player');
+		$gm16Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num15 = Calendar15::all()->sum('c5pm_gm');
+		$player17Num15 = Calendar15::all()->sum('c5pm_player');
+		$gm17Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num15 = Calendar15::all()->sum('c6pm_gm');
+		$player18Num15 = Calendar15::all()->sum('c6pm_player');
+		$gm18Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num15 = Calendar15::all()->sum('c7pm_gm');
+		$player19Num15 = Calendar15::all()->sum('c7pm_player');
+		$gm19Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num15 = Calendar15::all()->sum('c8pm_gm');
+		$player20Num15 = Calendar15::all()->sum('c8pm_player');
+		$gm20Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num15 = Calendar15::all()->sum('c9pm_gm');
+		$player21Num15 = Calendar15::all()->sum('c9pm_player');
+		$gm21Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num15 = Calendar15::all()->sum('c10pm_gm');
+		$player22Num15 = Calendar15::all()->sum('c10pm_player');
+		$gm22Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num15 = Calendar15::all()->sum('c11pm_gm');
+		$player23Num15 = Calendar15::all()->sum('c11pm_player');
+		$gm23Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num15 = Calendar15::all()->sum('c0pm_gm');
+		$player24Num15 = Calendar15::all()->sum('c0pm_player');
+		$gm24Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self15 = Calendar15::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
+
+		$calendar16 = Calendar16::where('user_id', $currentUser->id)->first();
+		$gm1Num16 = Calendar16::all()->sum('c1am_gm');
+		$player1Num16 = Calendar16::all()->sum('c1am_player');
+		$gm1Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c1am_gm', '=', '1']
+		])->value('c1am_gmyes');
+		$player1Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c1am_player', '=', '1']
+		])->value('c1am_playeryes');
+		$gm2Num16 = Calendar16::all()->sum('c2am_gm');
+		$player2Num16 = Calendar16::all()->sum('c2am_player');
+		$gm2Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c2am_gm', '=', '1']
+		])->value('c2am_gmyes');
+		$player2Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c2am_player', '=', '1']
+		])->value('c2am_playeryes');
+		$gm3Num16 = Calendar16::all()->sum('c3am_gm');
+		$player3Num16 = Calendar16::all()->sum('c3am_player');
+		$gm3Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c3am_gm', '=', '1']
+		])->value('c3am_gmyes');
+		$player3Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c3am_player', '=', '1']
+		])->value('c3am_playeryes');
+		$gm4Num16 = Calendar16::all()->sum('c4am_gm');
+		$player4Num16 = Calendar16::all()->sum('c4am_player');
+		$gm4Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c4am_gm', '=', '1']
+		])->value('c4am_gmyes');
+		$player4Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c4am_player', '=', '1']
+		])->value('c4am_playeryes');
+		$gm5Num16 = Calendar16::all()->sum('c5am_gm');
+		$player5Num16 = Calendar16::all()->sum('c5am_player');
+		$gm5Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c5am_gm', '=', '1']
+		])->value('c5am_gmyes');
+		$player5Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c5am_player', '=', '1']
+		])->value('c5am_playeryes');
+		$gm6Num16 = Calendar16::all()->sum('c6am_gm');
+		$player6Num16 = Calendar16::all()->sum('c6am_player');
+		$gm6Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c6am_gm', '=', '1']
+		])->value('c6am_gmyes');
+		$player6Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c6am_player', '=', '1']
+		])->value('c6am_playeryes');
+		$gm7Num16 = Calendar16::all()->sum('c7am_gm');
+		$player7Num16 = Calendar16::all()->sum('c7am_player');
+		$gm7Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c7am_gm', '=', '1']
+		])->value('c7am_gmyes');
+		$player7Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c7am_player', '=', '1']
+		])->value('c7am_playeryes');
+		$gm8Num16 = Calendar16::all()->sum('c8am_gm');
+		$player8Num16 = Calendar16::all()->sum('c8am_player');
+		$gm8Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c8am_gm', '=', '1']
+		])->value('c8am_gmyes');
+		$player8Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c8am_player', '=', '1']
+		])->value('c8am_playeryes');
+		$gm9Num16 = Calendar16::all()->sum('c9am_gm');
+		$player9Num16 = Calendar16::all()->sum('c9am_player');
+		$gm9Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c9am_gm', '=', '1']
+		])->value('c9am_gmyes');
+		$player9Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c9am_player', '=', '1']
+		])->value('c9am_playeryes');
+		$gm10Num16 = Calendar16::all()->sum('c10am_gm');
+		$player10Num16 = Calendar16::all()->sum('c10am_player');
+		$gm10Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c10am_gm', '=', '1']
+		])->value('c10am_gmyes');
+		$player10Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c10am_player', '=', '1']
+		])->value('c10am_playeryes');
+		$gm11Num16 = Calendar16::all()->sum('c11am_gm');
+		$player11Num16 = Calendar16::all()->sum('c11am_player');
+		$gm11Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c11am_gm', '=', '1']
+		])->value('c11am_gmyes');
+		$player11Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c11am_player', '=', '1']
+		])->value('c11am_playeryes');
+		$gm12Num16 = Calendar16::all()->sum('c12pm_gm');
+		$player12Num16 = Calendar16::all()->sum('c12pm_player');
+		$gm12Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c12pm_gm', '=', '1']
+		])->value('c12pm_gmyes');
+		$player12Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c12pm_player', '=', '1']
+		])->value('c12pm_playeryes');
+		$gm13Num16 = Calendar16::all()->sum('c1pm_gm');
+		$player13Num16 = Calendar16::all()->sum('c1pm_player');
+		$gm13Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c1pm_gm', '=', '1']
+		])->value('c1pm_gmyes');
+		$player13Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c1pm_player', '=', '1']
+		])->value('c1pm_playeryes');
+		$gm14Num16 = Calendar16::all()->sum('c2pm_gm');
+		$player14Num16 = Calendar16::all()->sum('c2pm_player');
+		$gm14Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c2pm_gm', '=', '1']
+		])->value('c2pm_gmyes');
+		$player14Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c2pm_player', '=', '1']
+		])->value('c2pm_playeryes');
+		$gm15Num16 = Calendar16::all()->sum('c3pm_gm');
+		$player15Num16 = Calendar16::all()->sum('c3pm_player');
+		$gm15Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c3pm_gm', '=', '1']
+		])->value('c3pm_gmyes');
+		$player15Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c3pm_player', '=', '1']
+		])->value('c3pm_playeryes');
+		$gm16Num16 = Calendar16::all()->sum('c4pm_gm');
+		$player16Num16 = Calendar16::all()->sum('c4pm_player');
+		$gm16Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c4pm_gm', '=', '1']
+		])->value('c4pm_gmyes');
+		$player16Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c4pm_player', '=', '1']
+		])->value('c4pm_playeryes');
+		$gm17Num16 = Calendar16::all()->sum('c5pm_gm');
+		$player17Num16 = Calendar16::all()->sum('c5pm_player');
+		$gm17Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c5pm_gm', '=', '1']
+		])->value('c5pm_gmyes');
+		$player17Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c5pm_player', '=', '1']
+		])->value('c5pm_playeryes');
+		$gm18Num16 = Calendar16::all()->sum('c6pm_gm');
+		$player18Num16 = Calendar16::all()->sum('c6pm_player');
+		$gm18Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c6pm_gm', '=', '1']
+		])->value('c6pm_gmyes');
+		$player18Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c6pm_player', '=', '1']
+		])->value('c6pm_playeryes');
+		$gm19Num16 = Calendar16::all()->sum('c7pm_gm');
+		$player19Num16 = Calendar16::all()->sum('c7pm_player');
+		$gm19Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c7pm_gm', '=', '1']
+		])->value('c7pm_gmyes');
+		$player19Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c7pm_player', '=', '1']
+		])->value('c7pm_playeryes');
+		$gm20Num16 = Calendar16::all()->sum('c8pm_gm');
+		$player20Num16 = Calendar16::all()->sum('c8pm_player');
+		$gm20Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c8pm_gm', '=', '1']
+		])->value('c8pm_gmyes');
+		$player20Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c8pm_player', '=', '1']
+		])->value('c8pm_playeryes');
+		$gm21Num16 = Calendar16::all()->sum('c9pm_gm');
+		$player21Num16 = Calendar16::all()->sum('c9pm_player');
+		$gm21Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c9pm_gm', '=', '1']
+		])->value('c9pm_gmyes');
+		$player21Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c9pm_player', '=', '1']
+		])->value('c9pm_playeryes');
+		$gm22Num16 = Calendar16::all()->sum('c10pm_gm');
+		$player22Num16 = Calendar16::all()->sum('c10pm_player');
+		$gm22Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c10pm_gm', '=', '1']
+		])->value('c10pm_gmyes');
+		$player22Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c10pm_player', '=', '1']
+		])->value('c10pm_playeryes');
+		$gm23Num16 = Calendar16::all()->sum('c11pm_gm');
+		$player23Num16 = Calendar16::all()->sum('c11pm_player');
+		$gm23Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c11pm_gm', '=', '1']
+		])->value('c11pm_gmyes');
+		$player23Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c11pm_player', '=', '1']
+		])->value('c11pm_playeryes');
+		$gm24Num16 = Calendar16::all()->sum('c0pm_gm');
+		$player24Num16 = Calendar16::all()->sum('c0pm_player');
+		$gm24Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c0pm_gm', '=', '1']
+		])->value('c0pm_gmyes');
+		$player24Self16 = Calendar16::where([
+		['user_id', $currentUser->id],
+		['c0pm_player', '=', '1']
+		])->value('c0pm_playeryes');
 
 
         $this->ci->view->render($response, 'pages/calendar.html.twig', [
@@ -2766,6 +4700,783 @@ class CalendarController {
 			"player24Num8" => $player24Num8,
 			"gm24Self8" => $gm24Self8,
 			"player24Self8" => $player24Self8,
+			"calendar9" => $calendar9, 
+			"gm1Num9" => $gm1Num9,
+			"player1Num9" => $player1Num9,
+			"gm1Self9" => $gm1Self9,
+			"player1Self9" => $player1Self9,
+			"gm2Num9" => $gm2Num9,
+			"player2Num9" => $player2Num9,
+			"gm2Self9" => $gm2Self9,
+			"player2Self9" => $player2Self9,
+			"gm3Num9" => $gm3Num9,
+			"player3Num9" => $player3Num9,
+			"gm3Self9" => $gm3Self9,
+			"player3Self9" => $player3Self9,
+			"gm4Num9" => $gm4Num9,
+			"player4Num9" => $player4Num9,
+			"gm4Self9" => $gm4Self9,
+			"player4Self9" => $player4Self9,
+			"gm5Num9" => $gm5Num9,
+			"player5Num9" => $player5Num9,
+			"gm5Self9" => $gm5Self9,
+			"player5Self9" => $player5Self9,
+			"gm6Num9" => $gm6Num9,
+			"player6Num9" => $player6Num9,
+			"gm6Self9" => $gm6Self9,
+			"player6Self9" => $player6Self9,
+			"gm7Num9" => $gm7Num9,
+			"player7Num9" => $player7Num9,
+			"gm7Self9" => $gm7Self9,
+			"player7Self9" => $player7Self9,
+			"gm8Num9" => $gm8Num9,
+			"player8Num9" => $player8Num9,
+			"gm8Self9" => $gm8Self9,
+			"player8Self9" => $player8Self9,
+			"gm9Num9" => $gm9Num9,
+			"player9Num9" => $player9Num9,
+			"gm9Self9" => $gm9Self9,
+			"player9Self9" => $player9Self9,
+			"gm10Num9" => $gm10Num9,
+			"player10Num9" => $player10Num9,
+			"gm10Self9" => $gm10Self9,
+			"player10Self9" => $player10Self9,
+			"gm11Num9" => $gm11Num9,
+			"player11Num9" => $player11Num9,
+			"gm11Self9" => $gm11Self9,
+			"player11Self9" => $player11Self9,
+			"gm12Num9" => $gm12Num9,
+			"player12Num9" => $player12Num9,
+			"gm12Self9" => $gm12Self9,
+			"player12Self9" => $player12Self9,
+			"gm13Num9" => $gm13Num9,
+			"player13Num9" => $player13Num9,
+			"gm13Self9" => $gm13Self9,
+			"player13Self9" => $player13Self9,
+			"gm14Num9" => $gm14Num9,
+			"player14Num9" => $player14Num9,
+			"gm14Self9" => $gm14Self9,
+			"player14Self9" => $player14Self9,
+			"gm15Num9" => $gm15Num9,
+			"player15Num9" => $player15Num9,
+			"gm15Self9" => $gm15Self9,
+			"player15Self9" => $player15Self9,
+			"gm16Num9" => $gm16Num9,
+			"player16Num9" => $player16Num9,
+			"gm16Self9" => $gm16Self9,
+			"player16Self9" => $player16Self9,
+			"gm17Num9" => $gm17Num9,
+			"player17Num9" => $player17Num9,
+			"gm17Self9" => $gm17Self9,
+			"player17Self9" => $player17Self9,
+			"gm18Num9" => $gm18Num9,
+			"player18Num9" => $player18Num9,
+			"gm18Self9" => $gm18Self9,
+			"player18Self9" => $player18Self9,
+			"gm19Num9" => $gm19Num9,
+			"player19Num9" => $player19Num9,
+			"gm19Self9" => $gm19Self9,
+			"player19Self9" => $player19Self9,
+			"gm20Num9" => $gm20Num9,
+			"player20Num9" => $player20Num9,
+			"gm20Self9" => $gm20Self9,
+			"player20Self9" => $player20Self9,
+			"gm21Num9" => $gm21Num9,
+			"player21Num9" => $player21Num9,
+			"gm21Self9" => $gm21Self9,
+			"player21Self9" => $player21Self9,
+			"gm22Num9" => $gm22Num9,
+			"player22Num9" => $player22Num9,
+			"gm22Self9" => $gm22Self9,
+			"player22Self9" => $player22Self9,
+			"gm23Num9" => $gm23Num9,
+			"player23Num9" => $player23Num9,
+			"gm23Self9" => $gm23Self9,
+			"player23Self9" => $player23Self9,
+			"gm24Num9" => $gm24Num9,
+			"player24Num9" => $player24Num9,
+			"gm24Self9" => $gm24Self9,
+			"player24Self9" => $player24Self9,
+			"calendar10" => $calendar10, 
+			"gm1Num10" => $gm1Num10,
+			"player1Num10" => $player1Num10,
+			"gm1Self10" => $gm1Self10,
+			"player1Self10" => $player1Self10,
+			"gm2Num10" => $gm2Num10,
+			"player2Num10" => $player2Num10,
+			"gm2Self10" => $gm2Self10,
+			"player2Self10" => $player2Self10,
+			"gm3Num10" => $gm3Num10,
+			"player3Num10" => $player3Num10,
+			"gm3Self10" => $gm3Self10,
+			"player3Self10" => $player3Self10,
+			"gm4Num10" => $gm4Num10,
+			"player4Num10" => $player4Num10,
+			"gm4Self10" => $gm4Self10,
+			"player4Self10" => $player4Self10,
+			"gm5Num10" => $gm5Num10,
+			"player5Num10" => $player5Num10,
+			"gm5Self10" => $gm5Self10,
+			"player5Self10" => $player5Self10,
+			"gm6Num10" => $gm6Num10,
+			"player6Num10" => $player6Num10,
+			"gm6Self10" => $gm6Self10,
+			"player6Self10" => $player6Self10,
+			"gm7Num10" => $gm7Num10,
+			"player7Num10" => $player7Num10,
+			"gm7Self10" => $gm7Self10,
+			"player7Self10" => $player7Self10,
+			"gm8Num10" => $gm8Num10,
+			"player8Num10" => $player8Num10,
+			"gm8Self10" => $gm8Self10,
+			"player8Self10" => $player8Self10,
+			"gm9Num10" => $gm9Num10,
+			"player9Num10" => $player9Num10,
+			"gm9Self10" => $gm9Self10,
+			"player9Self10" => $player9Self10,
+			"gm10Num10" => $gm10Num10,
+			"player10Num10" => $player10Num10,
+			"gm10Self10" => $gm10Self10,
+			"player10Self10" => $player10Self10,
+			"gm11Num10" => $gm11Num10,
+			"player11Num10" => $player11Num10,
+			"gm11Self10" => $gm11Self10,
+			"player11Self10" => $player11Self10,
+			"gm12Num10" => $gm12Num10,
+			"player12Num10" => $player12Num10,
+			"gm12Self10" => $gm12Self10,
+			"player12Self10" => $player12Self10,
+			"gm13Num10" => $gm13Num10,
+			"player13Num10" => $player13Num10,
+			"gm13Self10" => $gm13Self10,
+			"player13Self10" => $player13Self10,
+			"gm14Num10" => $gm14Num10,
+			"player14Num10" => $player14Num10,
+			"gm14Self10" => $gm14Self10,
+			"player14Self10" => $player14Self10,
+			"gm15Num10" => $gm15Num10,
+			"player15Num10" => $player15Num10,
+			"gm15Self10" => $gm15Self10,
+			"player15Self10" => $player15Self10,
+			"gm16Num10" => $gm16Num10,
+			"player16Num10" => $player16Num10,
+			"gm16Self10" => $gm16Self10,
+			"player16Self10" => $player16Self10,
+			"gm17Num10" => $gm17Num10,
+			"player17Num10" => $player17Num10,
+			"gm17Self10" => $gm17Self10,
+			"player17Self10" => $player17Self10,
+			"gm18Num10" => $gm18Num10,
+			"player18Num10" => $player18Num10,
+			"gm18Self10" => $gm18Self10,
+			"player18Self10" => $player18Self10,
+			"gm19Num10" => $gm19Num10,
+			"player19Num10" => $player19Num10,
+			"gm19Self10" => $gm19Self10,
+			"player19Self10" => $player19Self10,
+			"gm20Num10" => $gm20Num10,
+			"player20Num10" => $player20Num10,
+			"gm20Self10" => $gm20Self10,
+			"player20Self10" => $player20Self10,
+			"gm21Num10" => $gm21Num10,
+			"player21Num10" => $player21Num10,
+			"gm21Self10" => $gm21Self10,
+			"player21Self10" => $player21Self10,
+			"gm22Num10" => $gm22Num10,
+			"player22Num10" => $player22Num10,
+			"gm22Self10" => $gm22Self10,
+			"player22Self10" => $player22Self10,
+			"gm23Num10" => $gm23Num10,
+			"player23Num10" => $player23Num10,
+			"gm23Self10" => $gm23Self10,
+			"player23Self10" => $player23Self10,
+			"gm24Num10" => $gm24Num10,
+			"player24Num10" => $player24Num10,
+			"gm24Self10" => $gm24Self10,
+			"player24Self10" => $player24Self10,
+			"calendar11" => $calendar11, 
+			"gm1Num11" => $gm1Num11,
+			"player1Num11" => $player1Num11,
+			"gm1Self11" => $gm1Self11,
+			"player1Self11" => $player1Self11,
+			"gm2Num11" => $gm2Num11,
+			"player2Num11" => $player2Num11,
+			"gm2Self11" => $gm2Self11,
+			"player2Self11" => $player2Self11,
+			"gm3Num11" => $gm3Num11,
+			"player3Num11" => $player3Num11,
+			"gm3Self11" => $gm3Self11,
+			"player3Self11" => $player3Self11,
+			"gm4Num11" => $gm4Num11,
+			"player4Num11" => $player4Num11,
+			"gm4Self11" => $gm4Self11,
+			"player4Self11" => $player4Self11,
+			"gm5Num11" => $gm5Num11,
+			"player5Num11" => $player5Num11,
+			"gm5Self11" => $gm5Self11,
+			"player5Self11" => $player5Self11,
+			"gm6Num11" => $gm6Num11,
+			"player6Num11" => $player6Num11,
+			"gm6Self11" => $gm6Self11,
+			"player6Self11" => $player6Self11,
+			"gm7Num11" => $gm7Num11,
+			"player7Num11" => $player7Num11,
+			"gm7Self11" => $gm7Self11,
+			"player7Self11" => $player7Self11,
+			"gm8Num11" => $gm8Num11,
+			"player8Num11" => $player8Num11,
+			"gm8Self11" => $gm8Self11,
+			"player8Self11" => $player8Self11,
+			"gm9Num11" => $gm9Num11,
+			"player9Num11" => $player9Num11,
+			"gm9Self11" => $gm9Self11,
+			"player9Self11" => $player9Self11,
+			"gm10Num11" => $gm10Num11,
+			"player10Num11" => $player10Num11,
+			"gm10Self11" => $gm10Self11,
+			"player10Self11" => $player10Self11,
+			"gm11Num11" => $gm11Num11,
+			"player11Num11" => $player11Num11,
+			"gm11Self11" => $gm11Self11,
+			"player11Self11" => $player11Self11,
+			"gm12Num11" => $gm12Num11,
+			"player12Num11" => $player12Num11,
+			"gm12Self11" => $gm12Self11,
+			"player12Self11" => $player12Self11,
+			"gm13Num11" => $gm13Num11,
+			"player13Num11" => $player13Num11,
+			"gm13Self11" => $gm13Self11,
+			"player13Self11" => $player13Self11,
+			"gm14Num11" => $gm14Num11,
+			"player14Num11" => $player14Num11,
+			"gm14Self11" => $gm14Self11,
+			"player14Self11" => $player14Self11,
+			"gm15Num11" => $gm15Num11,
+			"player15Num11" => $player15Num11,
+			"gm15Self11" => $gm15Self11,
+			"player15Self11" => $player15Self11,
+			"gm16Num11" => $gm16Num11,
+			"player16Num11" => $player16Num11,
+			"gm16Self11" => $gm16Self11,
+			"player16Self11" => $player16Self11,
+			"gm17Num11" => $gm17Num11,
+			"player17Num11" => $player17Num11,
+			"gm17Self11" => $gm17Self11,
+			"player17Self11" => $player17Self11,
+			"gm18Num11" => $gm18Num11,
+			"player18Num11" => $player18Num11,
+			"gm18Self11" => $gm18Self11,
+			"player18Self11" => $player18Self11,
+			"gm19Num11" => $gm19Num11,
+			"player19Num11" => $player19Num11,
+			"gm19Self11" => $gm19Self11,
+			"player19Self11" => $player19Self11,
+			"gm20Num11" => $gm20Num11,
+			"player20Num11" => $player20Num11,
+			"gm20Self11" => $gm20Self11,
+			"player20Self11" => $player20Self11,
+			"gm21Num11" => $gm21Num11,
+			"player21Num11" => $player21Num11,
+			"gm21Self11" => $gm21Self11,
+			"player21Self11" => $player21Self11,
+			"gm22Num11" => $gm22Num11,
+			"player22Num11" => $player22Num11,
+			"gm22Self11" => $gm22Self11,
+			"player22Self11" => $player22Self11,
+			"gm23Num11" => $gm23Num11,
+			"player23Num11" => $player23Num11,
+			"gm23Self11" => $gm23Self11,
+			"player23Self11" => $player23Self11,
+			"gm24Num11" => $gm24Num11,
+			"player24Num11" => $player24Num11,
+			"gm24Self11" => $gm24Self11,
+			"player24Self11" => $player24Self11,
+			"calendar12" => $calendar12, 
+			"gm1Num12" => $gm1Num12,
+			"player1Num12" => $player1Num12,
+			"gm1Self12" => $gm1Self12,
+			"player1Self12" => $player1Self12,
+			"gm2Num12" => $gm2Num12,
+			"player2Num12" => $player2Num12,
+			"gm2Self12" => $gm2Self12,
+			"player2Self12" => $player2Self12,
+			"gm3Num12" => $gm3Num12,
+			"player3Num12" => $player3Num12,
+			"gm3Self12" => $gm3Self12,
+			"player3Self12" => $player3Self12,
+			"gm4Num12" => $gm4Num12,
+			"player4Num12" => $player4Num12,
+			"gm4Self12" => $gm4Self12,
+			"player4Self12" => $player4Self12,
+			"gm5Num12" => $gm5Num12,
+			"player5Num12" => $player5Num12,
+			"gm5Self12" => $gm5Self12,
+			"player5Self12" => $player5Self12,
+			"gm6Num12" => $gm6Num12,
+			"player6Num12" => $player6Num12,
+			"gm6Self12" => $gm6Self12,
+			"player6Self12" => $player6Self12,
+			"gm7Num12" => $gm7Num12,
+			"player7Num12" => $player7Num12,
+			"gm7Self12" => $gm7Self12,
+			"player7Self12" => $player7Self12,
+			"gm8Num12" => $gm8Num12,
+			"player8Num12" => $player8Num12,
+			"gm8Self12" => $gm8Self12,
+			"player8Self12" => $player8Self12,
+			"gm9Num12" => $gm9Num12,
+			"player9Num12" => $player9Num12,
+			"gm9Self12" => $gm9Self12,
+			"player9Self12" => $player9Self12,
+			"gm10Num12" => $gm10Num12,
+			"player10Num12" => $player10Num12,
+			"gm10Self12" => $gm10Self12,
+			"player10Self12" => $player10Self12,
+			"gm11Num12" => $gm11Num12,
+			"player11Num12" => $player11Num12,
+			"gm11Self12" => $gm11Self12,
+			"player11Self12" => $player11Self12,
+			"gm12Num12" => $gm12Num12,
+			"player12Num12" => $player12Num12,
+			"gm12Self12" => $gm12Self12,
+			"player12Self12" => $player12Self12,
+			"gm13Num12" => $gm13Num12,
+			"player13Num12" => $player13Num12,
+			"gm13Self12" => $gm13Self12,
+			"player13Self12" => $player13Self12,
+			"gm14Num12" => $gm14Num12,
+			"player14Num12" => $player14Num12,
+			"gm14Self12" => $gm14Self12,
+			"player14Self12" => $player14Self12,
+			"gm15Num12" => $gm15Num12,
+			"player15Num12" => $player15Num12,
+			"gm15Self12" => $gm15Self12,
+			"player15Self12" => $player15Self12,
+			"gm16Num12" => $gm16Num12,
+			"player16Num12" => $player16Num12,
+			"gm16Self12" => $gm16Self12,
+			"player16Self12" => $player16Self12,
+			"gm17Num12" => $gm17Num12,
+			"player17Num12" => $player17Num12,
+			"gm17Self12" => $gm17Self12,
+			"player17Self12" => $player17Self12,
+			"gm18Num12" => $gm18Num12,
+			"player18Num12" => $player18Num12,
+			"gm18Self12" => $gm18Self12,
+			"player18Self12" => $player18Self12,
+			"gm19Num12" => $gm19Num12,
+			"player19Num12" => $player19Num12,
+			"gm19Self12" => $gm19Self12,
+			"player19Self12" => $player19Self12,
+			"gm20Num12" => $gm20Num12,
+			"player20Num12" => $player20Num12,
+			"gm20Self12" => $gm20Self12,
+			"player20Self12" => $player20Self12,
+			"gm21Num12" => $gm21Num12,
+			"player21Num12" => $player21Num12,
+			"gm21Self12" => $gm21Self12,
+			"player21Self12" => $player21Self12,
+			"gm22Num12" => $gm22Num12,
+			"player22Num12" => $player22Num12,
+			"gm22Self12" => $gm22Self12,
+			"player22Self12" => $player22Self12,
+			"gm23Num12" => $gm23Num12,
+			"player23Num12" => $player23Num12,
+			"gm23Self12" => $gm23Self12,
+			"player23Self12" => $player23Self12,
+			"gm24Num12" => $gm24Num12,
+			"player24Num12" => $player24Num12,
+			"gm24Self12" => $gm24Self12,
+			"player24Self12" => $player24Self12,
+			"calendar13" => $calendar13, 
+			"gm1Num13" => $gm1Num13,
+			"player1Num13" => $player1Num13,
+			"gm1Self13" => $gm1Self13,
+			"player1Self13" => $player1Self13,
+			"gm2Num13" => $gm2Num13,
+			"player2Num13" => $player2Num13,
+			"gm2Self13" => $gm2Self13,
+			"player2Self13" => $player2Self13,
+			"gm3Num13" => $gm3Num13,
+			"player3Num13" => $player3Num13,
+			"gm3Self13" => $gm3Self13,
+			"player3Self13" => $player3Self13,
+			"gm4Num13" => $gm4Num13,
+			"player4Num13" => $player4Num13,
+			"gm4Self13" => $gm4Self13,
+			"player4Self13" => $player4Self13,
+			"gm5Num13" => $gm5Num13,
+			"player5Num13" => $player5Num13,
+			"gm5Self13" => $gm5Self13,
+			"player5Self13" => $player5Self13,
+			"gm6Num13" => $gm6Num13,
+			"player6Num13" => $player6Num13,
+			"gm6Self13" => $gm6Self13,
+			"player6Self13" => $player6Self13,
+			"gm7Num13" => $gm7Num13,
+			"player7Num13" => $player7Num13,
+			"gm7Self13" => $gm7Self13,
+			"player7Self13" => $player7Self13,
+			"gm8Num13" => $gm8Num13,
+			"player8Num13" => $player8Num13,
+			"gm8Self13" => $gm8Self13,
+			"player8Self13" => $player8Self13,
+			"gm9Num13" => $gm9Num13,
+			"player9Num13" => $player9Num13,
+			"gm9Self13" => $gm9Self13,
+			"player9Self13" => $player9Self13,
+			"gm10Num13" => $gm10Num13,
+			"player10Num13" => $player10Num13,
+			"gm10Self13" => $gm10Self13,
+			"player10Self13" => $player10Self13,
+			"gm11Num13" => $gm11Num13,
+			"player11Num13" => $player11Num13,
+			"gm11Self13" => $gm11Self13,
+			"player11Self13" => $player11Self13,
+			"gm12Num13" => $gm12Num13,
+			"player12Num13" => $player12Num13,
+			"gm12Self13" => $gm12Self13,
+			"player12Self13" => $player12Self13,
+			"gm13Num13" => $gm13Num13,
+			"player13Num13" => $player13Num13,
+			"gm13Self13" => $gm13Self13,
+			"player13Self13" => $player13Self13,
+			"gm14Num13" => $gm14Num13,
+			"player14Num13" => $player14Num13,
+			"gm14Self13" => $gm14Self13,
+			"player14Self13" => $player14Self13,
+			"gm15Num13" => $gm15Num13,
+			"player15Num13" => $player15Num13,
+			"gm15Self13" => $gm15Self13,
+			"player15Self13" => $player15Self13,
+			"gm16Num13" => $gm16Num13,
+			"player16Num13" => $player16Num13,
+			"gm16Self13" => $gm16Self13,
+			"player16Self13" => $player16Self13,
+			"gm17Num13" => $gm17Num13,
+			"player17Num13" => $player17Num13,
+			"gm17Self13" => $gm17Self13,
+			"player17Self13" => $player17Self13,
+			"gm18Num13" => $gm18Num13,
+			"player18Num13" => $player18Num13,
+			"gm18Self13" => $gm18Self13,
+			"player18Self13" => $player18Self13,
+			"gm19Num13" => $gm19Num13,
+			"player19Num13" => $player19Num13,
+			"gm19Self13" => $gm19Self13,
+			"player19Self13" => $player19Self13,
+			"gm20Num13" => $gm20Num13,
+			"player20Num13" => $player20Num13,
+			"gm20Self13" => $gm20Self13,
+			"player20Self13" => $player20Self13,
+			"gm21Num13" => $gm21Num13,
+			"player21Num13" => $player21Num13,
+			"gm21Self13" => $gm21Self13,
+			"player21Self13" => $player21Self13,
+			"gm22Num13" => $gm22Num13,
+			"player22Num13" => $player22Num13,
+			"gm22Self13" => $gm22Self13,
+			"player22Self13" => $player22Self13,
+			"gm23Num13" => $gm23Num13,
+			"player23Num13" => $player23Num13,
+			"gm23Self13" => $gm23Self13,
+			"player23Self13" => $player23Self13,
+			"gm24Num13" => $gm24Num13,
+			"player24Num13" => $player24Num13,
+			"gm24Self13" => $gm24Self13,
+			"player24Self13" => $player24Self13,
+			"calendar14" => $calendar14, 
+			"gm1Num14" => $gm1Num14,
+			"player1Num14" => $player1Num14,
+			"gm1Self14" => $gm1Self14,
+			"player1Self14" => $player1Self14,
+			"gm2Num14" => $gm2Num14,
+			"player2Num14" => $player2Num14,
+			"gm2Self14" => $gm2Self14,
+			"player2Self14" => $player2Self14,
+			"gm3Num14" => $gm3Num14,
+			"player3Num14" => $player3Num14,
+			"gm3Self14" => $gm3Self14,
+			"player3Self14" => $player3Self14,
+			"gm4Num14" => $gm4Num14,
+			"player4Num14" => $player4Num14,
+			"gm4Self14" => $gm4Self14,
+			"player4Self14" => $player4Self14,
+			"gm5Num14" => $gm5Num14,
+			"player5Num14" => $player5Num14,
+			"gm5Self14" => $gm5Self14,
+			"player5Self14" => $player5Self14,
+			"gm6Num14" => $gm6Num14,
+			"player6Num14" => $player6Num14,
+			"gm6Self14" => $gm6Self14,
+			"player6Self14" => $player6Self14,
+			"gm7Num14" => $gm7Num14,
+			"player7Num14" => $player7Num14,
+			"gm7Self14" => $gm7Self14,
+			"player7Self14" => $player7Self14,
+			"gm8Num14" => $gm8Num14,
+			"player8Num14" => $player8Num14,
+			"gm8Self14" => $gm8Self14,
+			"player8Self14" => $player8Self14,
+			"gm9Num14" => $gm9Num14,
+			"player9Num14" => $player9Num14,
+			"gm9Self14" => $gm9Self14,
+			"player9Self14" => $player9Self14,
+			"gm10Num14" => $gm10Num14,
+			"player10Num14" => $player10Num14,
+			"gm10Self14" => $gm10Self14,
+			"player10Self14" => $player10Self14,
+			"gm11Num14" => $gm11Num14,
+			"player11Num14" => $player11Num14,
+			"gm11Self14" => $gm11Self14,
+			"player11Self14" => $player11Self14,
+			"gm12Num14" => $gm12Num14,
+			"player12Num14" => $player12Num14,
+			"gm12Self14" => $gm12Self14,
+			"player12Self14" => $player12Self14,
+			"gm13Num14" => $gm13Num14,
+			"player13Num14" => $player13Num14,
+			"gm13Self14" => $gm13Self14,
+			"player13Self14" => $player13Self14,
+			"gm14Num14" => $gm14Num14,
+			"player14Num14" => $player14Num14,
+			"gm14Self14" => $gm14Self14,
+			"player14Self14" => $player14Self14,
+			"gm15Num14" => $gm15Num14,
+			"player15Num14" => $player15Num14,
+			"gm15Self14" => $gm15Self14,
+			"player15Self14" => $player15Self14,
+			"gm16Num14" => $gm16Num14,
+			"player16Num14" => $player16Num14,
+			"gm16Self14" => $gm16Self14,
+			"player16Self14" => $player16Self14,
+			"gm17Num14" => $gm17Num14,
+			"player17Num14" => $player17Num14,
+			"gm17Self14" => $gm17Self14,
+			"player17Self14" => $player17Self14,
+			"gm18Num14" => $gm18Num14,
+			"player18Num14" => $player18Num14,
+			"gm18Self14" => $gm18Self14,
+			"player18Self14" => $player18Self14,
+			"gm19Num14" => $gm19Num14,
+			"player19Num14" => $player19Num14,
+			"gm19Self14" => $gm19Self14,
+			"player19Self14" => $player19Self14,
+			"gm20Num14" => $gm20Num14,
+			"player20Num14" => $player20Num14,
+			"gm20Self14" => $gm20Self14,
+			"player20Self14" => $player20Self14,
+			"gm21Num14" => $gm21Num14,
+			"player21Num14" => $player21Num14,
+			"gm21Self14" => $gm21Self14,
+			"player21Self14" => $player21Self14,
+			"gm22Num14" => $gm22Num14,
+			"player22Num14" => $player22Num14,
+			"gm22Self14" => $gm22Self14,
+			"player22Self14" => $player22Self14,
+			"gm23Num14" => $gm23Num14,
+			"player23Num14" => $player23Num14,
+			"gm23Self14" => $gm23Self14,
+			"player23Self14" => $player23Self14,
+			"gm24Num14" => $gm24Num14,
+			"player24Num14" => $player24Num14,
+			"gm24Self14" => $gm24Self14,
+			"player24Self14" => $player24Self14,
+			"calendar15" => $calendar15, 
+			"gm1Num15" => $gm1Num15,
+			"player1Num15" => $player1Num15,
+			"gm1Self15" => $gm1Self15,
+			"player1Self15" => $player1Self15,
+			"gm2Num15" => $gm2Num15,
+			"player2Num15" => $player2Num15,
+			"gm2Self15" => $gm2Self15,
+			"player2Self15" => $player2Self15,
+			"gm3Num15" => $gm3Num15,
+			"player3Num15" => $player3Num15,
+			"gm3Self15" => $gm3Self15,
+			"player3Self15" => $player3Self15,
+			"gm4Num15" => $gm4Num15,
+			"player4Num15" => $player4Num15,
+			"gm4Self15" => $gm4Self15,
+			"player4Self15" => $player4Self15,
+			"gm5Num15" => $gm5Num15,
+			"player5Num15" => $player5Num15,
+			"gm5Self15" => $gm5Self15,
+			"player5Self15" => $player5Self15,
+			"gm6Num15" => $gm6Num15,
+			"player6Num15" => $player6Num15,
+			"gm6Self15" => $gm6Self15,
+			"player6Self15" => $player6Self15,
+			"gm7Num15" => $gm7Num15,
+			"player7Num15" => $player7Num15,
+			"gm7Self15" => $gm7Self15,
+			"player7Self15" => $player7Self15,
+			"gm8Num15" => $gm8Num15,
+			"player8Num15" => $player8Num15,
+			"gm8Self15" => $gm8Self15,
+			"player8Self15" => $player8Self15,
+			"gm9Num15" => $gm9Num15,
+			"player9Num15" => $player9Num15,
+			"gm9Self15" => $gm9Self15,
+			"player9Self15" => $player9Self15,
+			"gm10Num15" => $gm10Num15,
+			"player10Num15" => $player10Num15,
+			"gm10Self15" => $gm10Self15,
+			"player10Self15" => $player10Self15,
+			"gm11Num15" => $gm11Num15,
+			"player11Num15" => $player11Num15,
+			"gm11Self15" => $gm11Self15,
+			"player11Self15" => $player11Self15,
+			"gm12Num15" => $gm12Num15,
+			"player12Num15" => $player12Num15,
+			"gm12Self15" => $gm12Self15,
+			"player12Self15" => $player12Self15,
+			"gm13Num15" => $gm13Num15,
+			"player13Num15" => $player13Num15,
+			"gm13Self15" => $gm13Self15,
+			"player13Self15" => $player13Self15,
+			"gm14Num15" => $gm14Num15,
+			"player14Num15" => $player14Num15,
+			"gm14Self15" => $gm14Self15,
+			"player14Self15" => $player14Self15,
+			"gm15Num15" => $gm15Num15,
+			"player15Num15" => $player15Num15,
+			"gm15Self15" => $gm15Self15,
+			"player15Self15" => $player15Self15,
+			"gm16Num15" => $gm16Num15,
+			"player16Num15" => $player16Num15,
+			"gm16Self15" => $gm16Self15,
+			"player16Self15" => $player16Self15,
+			"gm17Num15" => $gm17Num15,
+			"player17Num15" => $player17Num15,
+			"gm17Self15" => $gm17Self15,
+			"player17Self15" => $player17Self15,
+			"gm18Num15" => $gm18Num15,
+			"player18Num15" => $player18Num15,
+			"gm18Self15" => $gm18Self15,
+			"player18Self15" => $player18Self15,
+			"gm19Num15" => $gm19Num15,
+			"player19Num15" => $player19Num15,
+			"gm19Self15" => $gm19Self15,
+			"player19Self15" => $player19Self15,
+			"gm20Num15" => $gm20Num15,
+			"player20Num15" => $player20Num15,
+			"gm20Self15" => $gm20Self15,
+			"player20Self15" => $player20Self15,
+			"gm21Num15" => $gm21Num15,
+			"player21Num15" => $player21Num15,
+			"gm21Self15" => $gm21Self15,
+			"player21Self15" => $player21Self15,
+			"gm22Num15" => $gm22Num15,
+			"player22Num15" => $player22Num15,
+			"gm22Self15" => $gm22Self15,
+			"player22Self15" => $player22Self15,
+			"gm23Num15" => $gm23Num15,
+			"player23Num15" => $player23Num15,
+			"gm23Self15" => $gm23Self15,
+			"player23Self15" => $player23Self15,
+			"gm24Num15" => $gm24Num15,
+			"player24Num15" => $player24Num15,
+			"gm24Self15" => $gm24Self15,
+			"player24Self15" => $player24Self15,
+			"calendar16" => $calendar16, 
+			"gm1Num16" => $gm1Num16,
+			"player1Num16" => $player1Num16,
+			"gm1Self16" => $gm1Self16,
+			"player1Self16" => $player1Self16,
+			"gm2Num16" => $gm2Num16,
+			"player2Num16" => $player2Num16,
+			"gm2Self16" => $gm2Self16,
+			"player2Self16" => $player2Self16,
+			"gm3Num16" => $gm3Num16,
+			"player3Num16" => $player3Num16,
+			"gm3Self16" => $gm3Self16,
+			"player3Self16" => $player3Self16,
+			"gm4Num16" => $gm4Num16,
+			"player4Num16" => $player4Num16,
+			"gm4Self16" => $gm4Self16,
+			"player4Self16" => $player4Self16,
+			"gm5Num16" => $gm5Num16,
+			"player5Num16" => $player5Num16,
+			"gm5Self16" => $gm5Self16,
+			"player5Self16" => $player5Self16,
+			"gm6Num16" => $gm6Num16,
+			"player6Num16" => $player6Num16,
+			"gm6Self16" => $gm6Self16,
+			"player6Self16" => $player6Self16,
+			"gm7Num16" => $gm7Num16,
+			"player7Num16" => $player7Num16,
+			"gm7Self16" => $gm7Self16,
+			"player7Self16" => $player7Self16,
+			"gm8Num16" => $gm8Num16,
+			"player8Num16" => $player8Num16,
+			"gm8Self16" => $gm8Self16,
+			"player8Self16" => $player8Self16,
+			"gm9Num16" => $gm9Num16,
+			"player9Num16" => $player9Num16,
+			"gm9Self16" => $gm9Self16,
+			"player9Self16" => $player9Self16,
+			"gm10Num16" => $gm10Num16,
+			"player10Num16" => $player10Num16,
+			"gm10Self16" => $gm10Self16,
+			"player10Self16" => $player10Self16,
+			"gm11Num16" => $gm11Num16,
+			"player11Num16" => $player11Num16,
+			"gm11Self16" => $gm11Self16,
+			"player11Self16" => $player11Self16,
+			"gm12Num16" => $gm12Num16,
+			"player12Num16" => $player12Num16,
+			"gm12Self16" => $gm12Self16,
+			"player12Self16" => $player12Self16,
+			"gm13Num16" => $gm13Num16,
+			"player13Num16" => $player13Num16,
+			"gm13Self16" => $gm13Self16,
+			"player13Self16" => $player13Self16,
+			"gm14Num16" => $gm14Num16,
+			"player14Num16" => $player14Num16,
+			"gm14Self16" => $gm14Self16,
+			"player14Self16" => $player14Self16,
+			"gm15Num16" => $gm15Num16,
+			"player15Num16" => $player15Num16,
+			"gm15Self16" => $gm15Self16,
+			"player15Self16" => $player15Self16,
+			"gm16Num16" => $gm16Num16,
+			"player16Num16" => $player16Num16,
+			"gm16Self16" => $gm16Self16,
+			"player16Self16" => $player16Self16,
+			"gm17Num16" => $gm17Num16,
+			"player17Num16" => $player17Num16,
+			"gm17Self16" => $gm17Self16,
+			"player17Self16" => $player17Self16,
+			"gm18Num16" => $gm18Num16,
+			"player18Num16" => $player18Num16,
+			"gm18Self16" => $gm18Self16,
+			"player18Self16" => $player18Self16,
+			"gm19Num16" => $gm19Num16,
+			"player19Num16" => $player19Num16,
+			"gm19Self16" => $gm19Self16,
+			"player19Self16" => $player19Self16,
+			"gm20Num16" => $gm20Num16,
+			"player20Num16" => $player20Num16,
+			"gm20Self16" => $gm20Self16,
+			"player20Self16" => $player20Self16,
+			"gm21Num16" => $gm21Num16,
+			"player21Num16" => $player21Num16,
+			"gm21Self16" => $gm21Self16,
+			"player21Self16" => $player21Self16,
+			"gm22Num16" => $gm22Num16,
+			"player22Num16" => $player22Num16,
+			"gm22Self16" => $gm22Self16,
+			"player22Self16" => $player22Self16,
+			"gm23Num16" => $gm23Num16,
+			"player23Num16" => $player23Num16,
+			"gm23Self16" => $gm23Self16,
+			"player23Self16" => $player23Self16,
+			"gm24Num16" => $gm24Num16,
+			"player24Num16" => $player24Num16,
+			"gm24Self16" => $gm24Self16,
+			"player24Self16" => $player24Self16,
+
 
 	
         ]);

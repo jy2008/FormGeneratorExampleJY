@@ -436,19 +436,271 @@
                                     <a href="#" class="js-displayConfirm" data-confirm-title="Cancel" data-confirm-message="Are your sure you want to cancel the game session" data-confirm-button="Yes" data-post-url="/calendar/{{calendar1.id}}" data-post-method="DELETE" data-toggle="modal">Cancel</a>
                                 </td>
                                 <td>
-                                    <strong>2</strong><br>
-                                    {% if gmNum2 == 1 %}  
-                                         {{gmNum2}} GMs<br>
+                                    <strong class="clcolor">2</strong><br>
+                                    {% if gm1Num2 > 0 or player1Num2 > 0 %}    
+                                    <strong>1am:</strong>
                                     {% endif %}
-                                    {% if gmSelf2 %}    
-                                        <i class="fa fa-check" aria-hidden="true"></i><br>
+                                    {% if gm1Num2 > 0 %}    
+                                        {{gm1Num2}} GM;
                                     {% endif %}
-                                    {{playerNum2}} Players<br>
-                                    {{gmSelf2}}
-                                    {{playerSelf2}}<br>
-                                    <a href="#" class="js-displayForm" data-toggle="modal" data-formUrl="/calendar/2/new">Join</a>
-                                    <a href="#" class="js-displayForm" data-toggle="modal" data-formUrl="/calendar/2/{{calendar2.id}}/edit">Change</a>
-                                    <a href="#" class="js-displayConfirm" data-confirm-title="Cancel" data-confirm-message="Are your sure you want to cancel the game session" data-confirm-button="Yes" data-post-url="/calendar/2/{{calendar2.id}}" data-post-method="DELETE" data-toggle="modal">Cancel</a>
+                                    {% if gm1Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player1Num2 > 0 %}    
+                                        {{player1Num2}} P;
+                                    {% endif %}
+                                    {% if player1Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm2Num2 > 0 or player2Num2 > 0 %}    
+                                    <strong>2am:</strong>
+                                    {% endif %}
+                                    {% if gm2Num2 > 0 %}    
+                                        {{gm2Num2}} GM;
+                                    {% endif %}
+                                    {% if gm2Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player2Num2 > 0 %}    
+                                        {{player2Num2}} P;
+                                    {% endif %}
+                                    {% if player2Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                   
+                                    {% if gm3Num2 > 0 or player3Num2 > 0 %}    
+                                    <strong>3am:</strong>
+                                    {% endif %}
+                                    {% if gm3Num2 > 0 %}    
+                                        {{gm3Num2}} GM;
+                                    {% endif %}
+                                    {% if gm3Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player3Num2 > 0 %}    
+                                        {{player3Num2}} P;
+                                    {% endif %}
+                                    {% if player3Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm4Num2 > 0 or player4Num2 > 0 %}    
+                                    <strong>4am:</strong>
+                                    {% endif %}
+                                    {% if gm4Num2 > 0 %}    
+                                        {{gm4Num2}} GM;
+                                    {% endif %}
+                                    {% if gm4Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player4Num2 > 0 %}    
+                                        {{player4Num2}} P;
+                                    {% endif %}
+                                    {% if player4Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm5Num2 > 0 or player5Num2 > 0 %}    
+                                    <strong>5am:</strong>
+                                    {% endif %}
+                                    {% if gm5Num2 > 0 %}    
+                                        {{gm5Num2}} GM;
+                                    {% endif %}
+                                    {% if gm5Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player5Num2 > 0 %}    
+                                        {{player5Num2}} P;
+                                    {% endif %}
+                                    {% if player5Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm6Num2 > 0 or player6Num2 > 0 %}    
+                                    <strong>6am:</strong>
+                                    {% endif %}
+                                    {% if gm6Num2 > 0 %}    
+                                        {{gm6Num2}} GM;
+                                    {% endif %}
+                                    {% if gm6Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player6Num2 > 0 %}    
+                                        {{player6Num2}} P;
+                                    {% endif %}
+                                    {% if player6Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm7Num2 > 0 or player7Num2 > 0 %}    
+                                    <strong>7am:</strong>
+                                    {% endif %}
+                                    {% if gm7Num2 > 0 %}    
+                                        {{gm7Num2}} GM;
+                                    {% endif %}
+                                    {% if gm7Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player7Num2 > 0 %}    
+                                        {{player7Num2}} P;
+                                    {% endif %}
+                                    {% if player7Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm8Num2 > 0 or player8Num2 > 0 %}    
+                                    <strong>8am:</strong>
+                                    {% endif %}
+                                    {% if gm8Num2 > 0 %}    
+                                        {{gm8Num2}} GM;
+                                    {% endif %}
+                                    {% if gm8Self2 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player8Num2Num1}} GM;
+                                    {% endif %}
+                                    {% if gm16Self1 %}    
+                                        <i class="Self2-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player16Num2 > 0 %}    
+                                        {{player16Num2}} P;
+                                    {% endif %}
+                                    {% if player16Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm17Num2 > 0 or player17Num2 > 0 Self2 
+                                    <strong>5pm:</strong>
+                                    {% endif %}
+                                    {% if gm17Num2 > 0 %}    
+                                        {{gm17Num2}} GM;
+                                    {% endif %}
+                                    {% if gm17Self1 %}    
+                                        <iSelf2s="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player17Num2 > 0 %}    
+                                        {{player17Num2}} P;
+                                    {% endif %}
+                                    {% if player17Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm18Num2 > 0 or player18Num2 > Self2   
+                                    <strong>6pm:</strong>
+                                    {% endif %}
+                                    {% if gm18Num2 > 0 %}    
+                                        {{gm18Num2}} GM;
+                                    {% endif %}
+                                    {% if gm18Self1 %}    
+                                        <i Self2="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player18Num2 > 0 %}    
+                                        {{player18Num2}} P;
+                                    {% endif %}
+                                    {% if player18Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm19Num2 > 0 or player19Num2 > 0Self2  
+                                    <strong>7pm:</strong>
+                                    {% endif %}
+                                    {% if gm19Num2 > 0 %}    
+                                        {{gm19Num2}} GM;
+                                    {% endif %}
+                                    {% if gm19Self1 %}    
+                                        <i cSelf2"fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player19Num2 > 0 %}    
+                                        {{player19Num2}} P;
+                                    {% endif %}
+                                    {% if player19Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm20Num2 > 0 or player20Num2 > 0 Self2 
+                                    <strong>8pm:</strong>
+                                    {% endif %}
+                                    {% if gm20Num2 > 0 %}    
+                                        {{gm20Num2}} GM;
+                                    {% endif %}
+                                    {% if gm20Self1 %}    
+                                        <i clSelf2fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player20Num2 > 0 %}    
+                                        {{player20Num2}} P;
+                                    {% endif %}
+                                    {% if player20Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm21Num2 > 0 or player21Num2 > 0 Self2 
+                                    <strong>9pm:</strong>
+                                    {% endif %}
+                                    {% if gm21Num2 > 0 %}    
+                                        {{gm21Num2}} GM;
+                                    {% endif %}
+                                    {% if gm21Self1 %}    
+                                        <i clSelf2fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player21Num2 > 0 %}    
+                                        {{player21Num2}} P;
+                                    {% endif %}
+                                    {% if player21Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm22Num2 > 0 or player22Num2 > 0 Self2 
+                                    <strong>10pm:</strong>
+                                    {% endif %}
+                                    {% if gm22Num2 > 0 %}    
+                                        {{gm22Num2}} GM;
+                                    {% endif %}
+                                    {% if gm22Self1 %}    
+                                        <i cSelf2"fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player22Num2 > 0 %}    
+                                        {{player22Num2}} P;
+                                    {% endif %}
+                                    {% if player22Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm23Num2 > 0 or player23Num2 > 0Self2  
+                                    <strong>11pm:</strong>
+                                    {% endif %}
+                                    {% if gm23Num2 > 0 %}    
+                                        {{gm23Num2}} GM;
+                                    {% endif %}
+                                    {% if gm23Self1 %}    
+                                        <i Self2="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player23Num2 > 0 %}    
+                                        {{player23Num2}} P;
+                                    {% endif %}
+                                    {% if player23Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    {% if gm24Num2 > 0 or player24Num2 > Self2   
+                                    <strong>12am:</strong>
+                                    {% endif %}
+                                    {% if gm24Num2 > 0 %}    
+                                        {{gm24Num2}} GM;
+                                    {% endif %}
+                                    {% if gm24Self1 %}    
+                                        <iSelf2s="fa fa-check check-color" aria-hidden="true"></i>
+                                    {% endif %}
+                                    {% if player24Num2 > 0 %}    
+                                        {{player24Num2}} P;
+                                    {% endif %}
+                                    {% if player24Self1 %}    
+                                        <i class="fa fa-check check-color" aria-hidden="true"></i><br>
+                                    {% endif %}
+                                    
+                                    <a href="#" class="js-displayForm" dSelf2oggle="modal" data-formUrl="/calendar/new">Join</a>
+                                    <a href="#" class="js-displayForm" data-toggle="modal" data-formUrl="/calendar/{{calendar1.id}}/edit">Change</a>
+                                    <a href="#" class="js-displayConfirm" data-confirm-title="Cancel" data-confirm-message="Are your sure you want to cancel the game session" datSelf2firm-button="Yes" data-post-url="/calendar/{{calendar1.id}}" data-post-method="DELETE" data-toggle="modal">Cancel</a>
                                 </td>
                                 
                             </tr>

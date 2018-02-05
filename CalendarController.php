@@ -10910,7 +10910,7 @@ class CalendarController {
         }
         $currentUser = $this->ci->currentUser;
 		
-        $calendar2 = new Calendar1($data);
+        $calendar2 = new Calendar2($data);
         $calendar2->user_id = $currentUser->id;
 		$calendar2->save();
 
@@ -11010,7 +11010,7 @@ class CalendarController {
         }
         $currentUser = $this->ci->currentUser;
 		
-        $calendar3 = new Calendar1($data);
+        $calendar3 = new Calendar3($data);
         $calendar3->user_id = $currentUser->id;
 		$calendar3->save();
 
@@ -11074,7 +11074,105 @@ class CalendarController {
         return $response->withStatus(200);
     } 			
     
-    		
+    public function createForm4($request, $response, $args){
+        $ms = $this->ci->alerts;
+		$currentUser = $this->ci->currentUser;
+		$calendar4 = Calendar4::where('user_id', $currentUser->id)->first();
+		if ($calendar4 != NULL) {
+			$ms->addMessageTranslated("warning", "Already joined");
+			return $response->withStatus(400);
+        }
+        $get = $request->getQueryParams();
+        $schema = new RequestSchema("schema://forms/calendar.json");
+        $validator = new JqueryValidationAdapter($schema, $this->ci->translator);
+        $form = new Form($schema);
+		
+        $this->ci->view->render($response, "FormGeneratorJY/CalxUpdate.html.twig", [
+            "box_id" => $get['box_id'],
+            "box_title" => "Join Game Session",
+            "submit_button" => "Join",
+            "form_action" => "/calendar/4",
+            "fields" => $form->generate(),
+            "validators" => $validator->rules('json', true)
+        ]);        
+    }
+
+    public function create4($request, $response, $args){
+        $ms = $this->ci->alerts;
+        $post = $request->getParsedBody();
+        $schema = new RequestSchema("schema://forms/calendar.json");
+        $transformer = new RequestDataTransformer($schema);
+        $data = $transformer->transform($post);
+        $validator = new ServerSideValidator($schema, $this->ci->translator);
+        if (!$validator->validate($data)) {
+            $ms->addValidationErrors($validator);
+            return $response->withStatus(400);
+        }
+        $currentUser = $this->ci->currentUser;
+		
+        $calendar4 = new Calendar4($data);
+        $calendar4->user_id = $currentUser->id;
+		$calendar4->save();
+
+        $ms->addMessageTranslated("success", "Successfully joined");
+        return $response->withStatus(200);        
+    }
+	
+    public function editForm4($request, $response, $args){
+        $ms = $this->ci->alerts;
+        $get = $request->getQueryParams();
+		$currentUser = $this->ci->currentUser;       
+        $calendar4 = Calendar4::where('user_id', $currentUser->id)->first();
+		$calendar4_id = $args['calendar4_id'];
+        $schema = new RequestSchema("schema://forms/calendar.json");
+        $validator = new JqueryValidationAdapter($schema, $this->ci->translator);
+      
+        $form = new Form($schema, $calendar2);
+
+        $this->ci->view->render($response, "FormGeneratorJY/CalxUpdate.html.twig", [
+            "box_id" => $get['box_id'],
+            "box_title" => "Change",
+            "submit_button" => "Change",
+            "form_action" => "/calendar/4/".$args['calendar4_id'],
+            "form_method" => "PUT", //Send form using PUT instead of "POST"
+            "fields" => $form->generate(),
+            "validators" => $validator->rules('json', true)
+        ]);       
+    }
+	     
+    public function update4($request, $response, $args){
+        $ms = $this->ci->alerts;
+		$currentUser = $this->ci->currentUser;
+        $calendar4_id = $args['calendar4_id'];
+        $calendar4 = Calendar4::where('user_id', $currentUser->id)->first();
+
+        $post = $request->getParsedBody();
+        $schema = new RequestSchema("schema://forms/calendar.json");
+        $transformer = new RequestDataTransformer($schema);
+        $data = $transformer->transform($post);
+        $validator = new ServerSideValidator($schema, $this->ci->translator);
+        if (!$validator->validate($data)) {
+            $ms->addValidationErrors($validator);
+            return $response->withStatus(400);
+        }
+
+        $calendar4->fill($data);
+		$calendar4->save();
+
+        $ms->addMessageTranslated("success", "Successfully updated");
+        return $response->withStatus(200);
+    }
+
+    public function delete4($request, $response, $args){
+        $ms = $this->ci->alerts;
+		$currentUser = $this->ci->currentUser;
+        $calendar4_id = $args['calendar4_id'];
+        $calendar4 = Calendar4::where('user_id', $currentUser->id)->first();
+        $calendar4->delete();
+
+        $ms->addMessageTranslated("success", "Successfully cancelled");
+        return $response->withStatus(200);
+    } 				
 	
 	
 	
